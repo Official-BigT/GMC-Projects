@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML project 1</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="./project.html">Home</a></li>
+        <li><a href="#about.html">About</a></li>
+        <li><a href="#work.html">Work</a></li>
+        <li><a href="#resume.html">Work</a></li>
+        <li><a href="#contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="./bigme.jpg" alt="This is me" width="320px" height="420px" />
+      <p>
+        My name is Anya-Nga Triumph, and I am a web developer with a passion for
+        creating beautiful and functional websites. I love learning new
+        technologies.
+      </p>
+    </section>
+    <section id="work">
+      <table class="border-1">
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+          <th>Link</th>
+        </tr>
+        <tr>
+          <td>Project 1</td>
+          <td>A simple HTML project</td>
+          <td><a href="project.html">View Project</a></td>
+        </tr>
+      </table>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my resume here:</p>
+      <a href="resume.pdf" download>Download Resume</a>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form action="#">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" required />
+        <label for="email">Your email address</label>
+        <input type="email" name="email" id="email" required />
+        <label for="meassage">Message</label>
+        <textarea name="name" id="name" cols="30" rows="10"></textarea>
+
+        <button type="submit" title="Submit the form">Submit</button>
+      </form>
+    </section>
+    <br />
+
+    <video controls width="300">
+        <source src="./20 Second Timer (Minimal).mp4" type="video/mp4">
+        Your browser does not support video playback.
+      </video>
+      
+      <audio controls>
+        <source src="./funny-scream-282982.mp3" type="audio/mp3">
+        Your browser does not support audio playback.
+      </audio>
+
+      <br>
+    <footer>
+      <p>&copy;  Official-BigT&trade; 2025. All rights reserved.</p>
+      <ul>
+        <li><a href="https://github.com/Official-BigT">GitHub</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
