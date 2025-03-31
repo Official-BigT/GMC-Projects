@@ -3,10 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML project 1</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>HTML Project 1</title>
   </head>
   <body>
-    <nav>
+    <nav class="navbar">
       <ul>
         <li><a href="./project.html">Home</a></li>
         <li><a href="#about.html">About</a></li>
@@ -17,15 +22,17 @@
     </nav>
     <section id="about">
       <h2>About Me</h2>
-      <img src="./assets/bigme.jpg" alt="This is me" width="320px" height="420px" />
-      <p>
-        My name is Anya-Nga Triumph, and I am a web developer with a passion for
-        creating beautiful and functional websites. I love learning new
-        technologies.
-      </p>
+      <div class="about-content">
+        <img src="./assets/bigme.jpg" alt="This is me" />
+        <p class="about-text">
+          My name is <span style="font-style: italic">Anya-Nga Triumph</span>,
+          and I am a web developer with a passion for creating beautiful and
+          functional websites. I love learning new technologies.
+        </p>
+      </div>
     </section>
     <section id="work">
-      <table class="border-1">
+      <table>
         <tr>
           <th>Project</th>
           <th>Description</th>
@@ -36,12 +43,19 @@
           <td>A simple HTML project</td>
           <td><a href="project.html">View Project</a></td>
         </tr>
+        <tr>
+          <td>Project 2</td>
+          <td>A simple HTML project with CSS applied</td>
+          <td><a href="#project.html">View Project</a></td>
+        </tr>
       </table>
     </section>
     <section id="resume">
       <h2>Resume</h2>
-      <p>Download my resume here:</p>
-      <a href="resume.pdf" download>Download Resume</a>
+      <div class="download">
+        <p>Download my resume here:</p>
+        <a href="resume.pdf" download>Download Resume</a>
+      </div>
     </section>
     <section id="contact">
       <h2>Contact Me</h2>
@@ -59,18 +73,18 @@
     <br />
 
     <video controls width="300">
-        <source src="./assets/20 Second Timer (Minimal).mp4" type="video/mp4">
-        Your browser does not support video playback.
-      </video>
-      
-      <audio controls>
-        <source src="/assets/funny-scream-282982.mp3" type="audio/mp3">
-        Your browser does not support audio playback.
-      </audio>
+      <source src="./assets/20 Second Timer (Minimal).mp4" type="video/mp4" />
+      Your browser does not support video playback.
+    </video>
 
-      <br>
+    <audio controls>
+      <source src="/assets/funny-scream-282982.mp3" type="audio/mp3" />
+      Your browser does not support audio playback.
+    </audio>
+
+    <br />
     <footer>
-      <p>&copy;  Official-BigT&trade; 2025. All rights reserved.</p>
+      <p>&copy; Official-BigT&trade; 2025. All rights reserved.</p>
       <ul>
         <li><a href="https://github.com/Official-BigT">GitHub</a></li>
         <li><a href="#">LinkedIn</a></li>
