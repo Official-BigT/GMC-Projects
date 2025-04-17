@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* // <weight>: Use a value from 200 to 1000 */
+/* // <uniquifier>: Use a unique and descriptive class name */
+
+/* (\.nunito-<uniquifier> {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}) */
+
+body {
+  font-family: "Nunito", sans-serif;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #f4f4f4;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  line-height: 2.8rem;
+  border-radius: 15px;
+  box-shadow: 0px 0px 35px rgba(30, 119, 154, 0.393);
+}
+header {
+  color: rgb(20, 100, 127);
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0px;
+  width: 100%;
+  margin: 50px auto;
+  max-width: 900px;
+}
+header h1 {
+  margin: 5px 10px;
+  font-size: 4rem;
+}
+header p {
+  margin: 5px 10px 10px 0px;
+  font-size: 1.2rem;
+  color: rgb(20, 100, 127);
+}
+header a {
+  margin: 5px 10px;
+  font-size: 1.2rem;
+  color: rgb(20, 100, 127);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+/* .download-btn{
+    display: inline-block;
+    margin: 5px 10px;
+} */
+
+header a:hover {
+  font-size: 1.4rem;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  background-color: rgb(20, 100, 127);
+  border-radius: 5px;
+}
+
+.education {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 55px;
+}
+.education h2 {
+  text-align: start;
+  font-size: 2rem;
+}
+.education h4 {
+  text-align: start;
+  font-size: 1rem;
+}
+.education p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.education ul {
+  list-style-type: none;
+  padding: 0;
+}
+.education ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding: 20px 0px;
+  width: 100%;
+  margin: 50px auto;
+  max-width: 900px;
+}
+footer p {
+  margin: 0;
+  font-size: 1rem;
+  color: #e3dbdb;
+}

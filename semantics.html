@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semantic HTML</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/bigt-logo.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Basic Semantic HTML</h1>
+      <nav>
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#examples">Examples</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <aside>
+        <h2>Other Related Links</h2>
+        <ul>
+          <li><a href="#">HTML5 Specification</a></li>
+          <li><a href="#">MDN Web Docs</a></li>
+        </ul>
+      </aside>
+    </section>
+    <section>
+      <h2 id="introduction">Introduction</h2>
+      <p>
+        Semantic HTML refers to the use of HTML markup that conveys meaning
+        about the content it contains. This helps both browsers and developers
+        understand the structure and purpose of the content.
+      </p>
+    </section>
+    <section>
+      <h2 id="benefits">Benefits of Semantic HTML</h2>
+      <ul>
+        <li>Improved accessibility for screen readers</li>
+        <li>Better SEO performance</li>
+        <li>Clearer code structure for developers</li>
+      </ul>
+    </section>
+
+    <section id="family-tree">
+      <div class="parent">
+        <h3 class="child">Son</h3>
+        <h3 class="child">Daughter</h3>
+        <div class="step-child">
+          <h3 class="step-s">Step-Son</h3>
+          <h3 class="step-d">Step-Daughter</h3>
+        </div>
+      </div>
+
+      <h2 class="next-sibling">This is the next sibling</h2>
+
+      <div>
+        <h2 class="next-sibling">This is a sibling</h2>
+      </div>
+
+      <div class="gen-sibling"></div>
+
+      <div class="after">
+        <h2 class="After1">After 1</h2>
+
+        <h3 class="After2">After 2</h3>
+
+        <h3 class="After3">After 3</h3>
+      </div>
+
+      <h3 class="tree">This is a weird family tree!</h3>
+
+      <div class="m-s">
+        <h3 class="m-text">Normal Mashia settings</h3>
+        <ul class="m-content">
+          <li class="m-item">Bread</li>
+          <li class="m-item">Egg</li>
+          <li class="m-item">Milk</li>
+        </ul>
+      </div>
+
+      <div class="pos">
+        <img src="./assets/bleach.jpg" alt="Other image" />
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="center">Centered</div>
+        <div class="btleft">Bottom Left</div>
+        <div class="btright">Bottom Right</div>
+      </div>
+      
+    </section>
+
+    <footer>
+      <p>© 2025 Official-BigT&trade;. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

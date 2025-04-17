@@ -15,10 +15,10 @@
     <nav class="navbar">
       <ul>
         <li><a href="./project.html">Home</a></li>
-        <li><a href="#about.html">About</a></li>
-        <li><a href="#work.html">Work</a></li>
-        <li><a href="#resume.html">Resume</a></li>
-        <li><a href="#contact.html">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <section id="about">
@@ -33,6 +33,7 @@
       </div>
     </section>
     <section id="work">
+      <h2 class="work-text">Workdone so far.</h2>
       <table>
         <tr>
           <th>Project</th>
@@ -42,12 +43,22 @@
         <tr>
           <td>Project 1</td>
           <td>A simple HTML project</td>
-          <td><a href="project.html">View Project</a></td>
+          <td>
+            <a
+              href="https://github.com/Official-BigT/GMC-Project-1/blob/main/project.html"
+              >View Project</a
+            >
+          </td>
         </tr>
         <tr>
           <td>Project 2</td>
           <td>A simple HTML project with CSS applied</td>
-          <td><a href="#project.html">View Project</a></td>
+          <td>
+            <a
+              href="https://github.com/Official-BigT/GMC-Project-1/blob/main/styles.css"
+              >View Project</a
+            >
+          </td>
         </tr>
       </table>
     </section>
@@ -63,8 +74,10 @@
       <form action="#">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required />
+
         <label for="email">Your email address</label>
         <input type="email" name="email" id="email" required />
+
         <label for="meassage">Message</label>
         <textarea name="name" id="name" cols="30" rows="10"></textarea>
 
@@ -77,13 +90,14 @@
       <h1>Flexbox example</h1>
     </div>
     <div class="aux">
-      <video controls autoplay loop>
+      <video controls>
         <source src="./assets/20 Second Timer (Minimal).mp4" type="video/mp4" />
         Your browser does not support video playback.
       </video>
       <audio controls>
         <source src="/assets/funny-scream-282982.mp3" type="audio/mp3" />
-        Your browser does not support audio playback.</audio>
+        Your browser does not support audio playback.
+      </audio>
       <iframe
         id="vid2"
         autoplay
@@ -96,19 +110,34 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-      
     </div>
 
     <br />
 
-    
-    
+    <!-- <section>
+      <div class="flexbox">
+        <article>
+          <h2>First article</h2>
+          <p>Content…</p>
+        </article>
+        <article>
+          <h2>Second article</h2>
+          <p>Content…</p>
+        </article>
+        <article>
+          <h2>Third article</h2>
+          <p>Content…</p>
+        </article>
+      </div>
+    </section> -->
 
+    
     <footer>
       <p>&copy; Official-BigT&trade; 2025. All rights reserved.</p>
       <ul>
         <li><a href="https://github.com/Official-BigT">GitHub</a></li>
         <li><a href="#">LinkedIn</a></li>
+        <li><a href="https://www.gomycode.co">GMC</a></li>
       </ul>
     </footer>
   </body>
