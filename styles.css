@@ -26,12 +26,12 @@ nav {
   margin-bottom: 5rem;
   width: 100%;
 }
-nav ul li {
+nav li {
   display: inline;
+  text-decoration: none;
 }
 
 nav ul li a {
-  text-decoration: none;
   padding: 10px;
   color: #e3dbdb;
   font-weight: bold;

@@ -1,0 +1,41 @@
+Initialize charCount ← 0
+Initialize wordCount ← 0
+Initialize vowelCount ← 0
+Initialize prev ← ""
+
+Input : A sentence that ends with a period .
+
+VAR 
+    ch ;= "A sentence that ends with a period ."
+    charCount ;= 0
+    wordCountCount ;= 0
+    vowelCountCount ;= 0
+    prev ;= ""
+// Print "Enter a sentence ending with a period (.)"
+
+REPEAT
+    Read character ;= ch
+    charCount ;= charCount + 1
+
+    IF ch is a vowel (a, e, i, o, u or A, E, I, O, U) THEN
+        vowelCount ;= vowelCount + 1
+    END IF
+
+    IF ch ;= " " AND prev ≠ " " THEN
+        wordCount ;= wordCount + 1
+    END IF
+
+    prev;= ch
+
+    Write(charCount)
+    Write(wordCount)
+    Write(vowelCount)
+
+UNTIL ch ;= "."
+
+// wordCount ← wordCount + 1  // to count the last word
+
+// Print "Number of characters: ", charCount
+// Print "Number of words: ", wordCount
+// Print "Number of vowels: ", vowelCount
+END
