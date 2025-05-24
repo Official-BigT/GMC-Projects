@@ -1,0 +1,102 @@
+// Problem 1 
+
+VAR
+    set1, set2 : ARRAY OF INTEGER
+    i, j, sum : INTEGER
+    isFound : BOOLEAN
+
+BEGIN
+    set1 ← [3, 1, 7, 9]
+    set2 ← [2, 4, 1, 9, 3]
+    sum ← 0
+
+    // Traverse elements of set1
+    FOR i ← 0 TO length of set1 - 1 DO
+        isFound ← FALSE
+        FOR j ← 0 TO length of set2 - 1 DO
+            IF set1[i] = set2[j] THEN
+                isFound ← TRUE
+            END IF
+        END FOR
+        IF isFound = FALSE THEN
+            sum ← sum + set1[i]
+        END IF
+    END FOR
+
+    // Traverse elements of set2
+    FOR i ← 0 TO length of set2 - 1 DO
+        isFound ← FALSE
+        FOR j ← 0 TO length of set1 - 1 DO
+            IF set2[i] = set1[j] THEN
+                isFound ← TRUE
+            END IF
+        END FOR
+        IF isFound = FALSE THEN
+            sum ← sum + set2[i]
+        END IF
+    END FOR
+
+    PRINT "Sum of distinct elements is: ", sum
+END
+
+
+
+// Problem 2
+
+PROCEDURE dot_product(v1, v2, n, ps)
+    VARIABLES
+        i : INTEGER
+
+    BEGIN
+        ps ← 0
+        FOR i ← 0 TO n - 1 DO
+            ps ← ps + (v1[i] * v2[i])
+        END FOR
+    END
+
+VAR
+    v1, v2 : ARRAY OF REAL
+    n, i, j, ps : INTEGER
+    num_pairs : INTEGER
+
+BEGIN
+    PRINT "Enter number of vector pairs:"
+    READ num_pairs
+    PRINT "Enter size of each vector:"
+    READ n
+
+    FOR i ← 1 TO num_pairs DO
+        PRINT "Enter elements for vector v1:"
+        FOR j ← 0 TO n - 1 DO
+            READ v1[j]
+        END FOR
+
+        PRINT "Enter elements for vector v2:"
+        FOR j ← 0 TO n - 1 DO
+            READ v2[j]
+        END FOR
+
+        // CALL dot_product(v1, v2, n, ps)
+        ps ← dot_product(v1, v2, n)
+
+
+        IF ps = 0 THEN
+            PRINT "Vectors are orthogonal."
+        ELSE
+            PRINT "Vectors are not orthogonal."
+        END IF
+    END FOR
+END
+
+FUNCTION dot_product(v1, v2, n) RETURNS REAL
+    VARIABLES
+        i : INTEGER
+        result : REAL
+
+    BEGIN
+        result ← 0
+        FOR i ← 0 TO n - 1 DO
+            result ← result + (v1[i] * v2[i])
+        END FOR
+        RETURN result
+    END
