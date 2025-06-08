@@ -1,0 +1,30 @@
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+#color-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  background-color: #3498db; /* default color */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#change-color-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
