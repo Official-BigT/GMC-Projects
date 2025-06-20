@@ -1,0 +1,20 @@
+.bigblue {
+  color: DodgerBlue;
+  padding: 40px;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+
+.header_area {
+  font-size: 40px;
+  background-color: DodgerBlue;
+  color: white;
+  border: 2px solid cyan;
+}
+
+.card {
+  background-color: black;
+  border: 2px solid cyan;
+  color: white;
+  padding: 20px;
+}

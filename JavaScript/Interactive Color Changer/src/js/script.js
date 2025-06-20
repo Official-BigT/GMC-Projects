@@ -7,11 +7,13 @@ document.addEventListener("DOMContentLoaded", function () {
 //   Function to generate a random hex color
   function getRandomColor() {
     const letters = "0123456789ABCDEF";
+    // const colours = "red green blue yellow orange purple pink brown black white gray".split(" ");
     let color = "#";
     for (let i = 0; i < 6; i++) {
       color += letters[Math.floor(Math.random() * 16)];
     }
     
+    // console.log(color);
     return color;
   }
 
