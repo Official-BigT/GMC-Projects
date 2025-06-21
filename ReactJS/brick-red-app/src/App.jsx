@@ -3,6 +3,7 @@
 // import bigtLogo from "./assets/bigt logo.png";
 // import viteLogo from "/vite.svg";
 import "./App.css";
+import Football from "./components/Football";
 import Product from "./components/product";
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
         Click on the Vite, React and Big T logos to learn more
       </p> */}
 
-      
+      <Football/>
 
 
       {/* <div>{createMyForm()}</div> */}
