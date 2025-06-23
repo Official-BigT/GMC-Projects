@@ -3,8 +3,9 @@
 // import bigtLogo from "./assets/bigt logo.png";
 // import viteLogo from "/vite.svg";
 import "./App.css";
-import Football from "./components/Football";
-import Product from "./components/product";
+// import Football from "./components/Football";
+// import Product from "./components/product";
+import Movies from "./components/Movies";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -56,12 +57,14 @@ function App() {
         Click on the Vite, React and Big T logos to learn more
       </p> */}
 
-      <Football/>
+      {/* <Football/> */}
 
 
       {/* <div>{createMyForm()}</div> */}
       
-      <Product/>
+      {/* <Product/> */}
+
+      <Movies/>
 
       <div className="footer">
         <p>Made with ❤️ by Official Big T</p>
