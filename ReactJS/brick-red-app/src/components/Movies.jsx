@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 // Dummy filled values
 // const initialMovies = [
@@ -77,20 +78,27 @@ const AddMovie = ({ onAdd }) => {
   );
 };
 
-const MovieCard = ({ title, description, posterURL, rating }) => {
+const MovieCard = ({ movie }) => {
   // to display each movie individual movie.
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        padding: "1rem",
-        marginBottom: "1rem",
-      }}
-    >
-      <img src={posterURL} alt={title} width="150" /> <h3>{title}</h3>
-      <p>{description}</p>
-      <strong>Rating: {rating}</strong>
-    </div>
+    <>
+      <h2>{movie.title}</h2>
+      <Link to={`movie/${movie.id}`}>
+        <button>View Details</button>
+      </Link>
+      {/* <div
+        style={{
+          border: "1px solid #ccc",
+          padding: "1rem",
+          marginBottom: "1rem",
+        }}
+      >
+        <img src={movie.posterURL} alt={movie.title} width="150" />{" "}
+        <h3>{movie.title}</h3>
+        <p>{movie.description}</p>
+        <strong>Rating: {movie.rating}</strong>
+      </div> */}
+    </>
   );
 };
 
@@ -104,7 +112,7 @@ key={i} – helps React optimize rendering; not ideal for real apps, but fine fo
 
       <div className="movie-list">
         {movies.map((movie, i) => (
-          <MovieCard key={i} {...movie} />
+          <MovieCard key={i} movie={movie} />
         ))}
       </div>
     </>
@@ -136,15 +144,19 @@ const Filter = ({ onTitleChange, onRateChange }) => {
 const Movies = () => {
   const [movies, setMovies] = useState([
     {
+      id: 1,
       title: "Inception",
       description: "A mind-bending thriller by Christopher Nolan.",
       posterURL: "https://via.placeholder.com/150",
+      trailer: "https://youtu.be/LifqWf0BAOA?si=3vPatUX3D4tLx28e",
       rating: 4.5,
     },
     {
+      id: 2,
       title: "Interstellar",
       description: "A sci-fi epic exploring time and space.",
       posterURL: "https://via.placeholder.com/150",
+      trailer: "https://youtu.be/zSWdZVtXT7E?si=SrF-9Ibjx9Crd5aA",
       rating: 5,
     },
   ]);
@@ -168,5 +180,3 @@ const Movies = () => {
 };
 
 export default Movies;
-
-
