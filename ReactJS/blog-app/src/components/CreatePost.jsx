@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const CreatePost = () => {
  
   const [title, setTitle] = useState('')
