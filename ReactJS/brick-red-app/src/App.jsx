@@ -8,6 +8,7 @@ import "./App.css";
 // import Product from "./components/product";
 import Movies from "./components/Movies";
 import MoviePage from "./pages/MoviePage";
+import AddTask from "./components/AddTask";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -43,6 +44,13 @@ function App() {
       {/* <div>{createMyForm()}</div> */}
 
       {/* <Product/> */}
+
+      <div>
+        <h1>My ToDo App</h1>
+        <p>Welcome to my ToDo app built with React and Redux!</p>
+        <AddTask/>
+        <ListTask/>
+      </div>
 
       <div className="footer">
         <p>Made with ❤️ by Official Big T</p>
