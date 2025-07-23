@@ -9,6 +9,8 @@ import "./App.css";
 import Movies from "./components/Movies";
 import MoviePage from "./pages/MoviePage";
 import AddTask from "./components/AddTask";
+import ListTask from "./components/ListTask";
+import Task from "./components/Task";
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -49,6 +51,7 @@ function App() {
         <h1>My ToDo App</h1>
         <p>Welcome to my ToDo app built with React and Redux!</p>
         <AddTask/>
+        {/* <Task/> */}
         <ListTask/>
       </div>
 

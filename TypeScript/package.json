@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "tsc --watch",
+    "compile-ts": "node --watch dist/script"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
