@@ -15,6 +15,11 @@ const names = ["BigT", "Luigi", "Mario"];
 names.push("Peach");
 names.push({ food: "Tufu Curry" }); // Use 'as any' to bypass type checking if type is known
 console.log(names);
+// Tuples example
+let myTuple;
+// initialize correctly
+myTuple = [5, false, "UnknownT was here"];
+console.log(myTuple);
 // Enums _-_ Enumerations
 // enum Level { high, medium, low }
 var Cpoints;
@@ -25,3 +30,16 @@ var Cpoints;
     Cpoints[Cpoints["West"] = 6] = "West";
 })(Cpoints || (Cpoints = {}));
 console.log(Cpoints.West);
+// Car Class implemented
+class Car {
+    constructor(make, model, year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    start() {
+        console.log(`Car engine started`);
+    }
+}
+const myCar = new Car(`R8 v12`, `Audi`, 2024);
+myCar.start(); //Output: Car engine started
