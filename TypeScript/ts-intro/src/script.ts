@@ -60,9 +60,9 @@ class Car implements Vehicle {
   }
 
   start(): void {
-    console.log(`Car engine started`)
+    console.log(`Car engine started`);
   }
 }
 
-const myCar = new Car (`R8 v12`,`Audi`, 2024);
+const myCar = new Car(`R8 v12`, `Audi`, 2024);
 myCar.start(); //Output: Car engine started
